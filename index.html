@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>房客系統</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .container h2 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: #333;
+        }
+        .container label {
+            margin-bottom: 5px;
+            display: block;
+            color: #555;
+        }
+        .container input,
+        .container select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+            box-sizing: border-box;
+        }
+        .container button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="address">住址</label>
+            <select id="address" name="address" required>
+                <option value="" disabled selected>選擇地址</option>
+                <option value="address1">斗六市中正路40號</option>
+                <option value="address2">虎尾光復路30巷79號</option>
+                <option value="address3">斗南鎮東間西路45號</option>
+            </select>
+            <label for="username">房號</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">密碼</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">立即登入</button>
+        </form>
+    </div>
+    <script src="../.js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
